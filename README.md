@@ -26,8 +26,8 @@ func main() {
     // Authorize client
     authorize := authorize.New(API_LOGIN_ID, TRANSACTION_KEY, KEY)
 
-    // Test Your Authentication Credentials
-    message, err := authorize.TestCredentials()
-    fmt.Println(err, message)
+    // Test Authentication Credentials
+    err := authorize.AuthenticationTest()
+    fmt.Println(err)
 }
 ~~~
